@@ -90,28 +90,28 @@ console.log(numbers)            // on affiche le tableau
 // 1. Écrivez une fonction qui prend en argument un entier et renvoie `true` si l'entier est pair, `false` sinon. 
 // Vous pouvez utiliser l'opérateur modulo `%` pour vérifier si un nombre est divisible par deux.
 
-function pair(entier) {
-    if { (entier % 2 == 0) 
-    return true;
-}
-return false;
+function pair(entier) {         // declaration de la fonction pair avec en argument un entier
+    if (entier % 2 == 0) {    // condition si le resultat du modulo par 2  de l'entier est egal a 0 
+        return true;                // alors c'est un nombre pair donc on renvoi true
+    }
+    return false;                   // sinon on renvoi false 
 }
 
 // 2. Écrivez une fonction qui prend en argument un tableau d'entiers et renvoie la somme de tous les éléments du tableau. 
 // Vous pouvez utiliser une boucle `for` pour parcourir le tableau et ajouter chaque élément à une variable qui tiendra la somme.
 
 
-function sum(numbers) {
-    let result = 0;
+function sum(numbers) {                 // declaration de la fonction sum avec un tableau en argument
+    let result = 0;                     // declaration de la variable result 
 
-    for (let i = 0; i < numbers.length; i++) {
-        result+=numbers[i];    
+    for (let i = 0; i < numbers.length; i++) {  // boucle de 0 a la longueur du tableau
+        result += numbers[i];                   // additionne a chaque iteration les nombres du tableau dans la variable result
     }
 
-    return result;
+    return result;                              // puis renvoi le resultat
 }
 
-console.log(sum([5, 6, 1, 2]))
+console.log(sum([15, 8, 1, 14]))                  // appel de la fonction 
 
 
 // 3. Écrivez une fonction qui prend en argument une chaîne de caractères et renvoie la chaîne de caractères inversée. 
@@ -119,8 +119,8 @@ console.log(sum([5, 6, 1, 2]))
 // Vous pouvez utiliser la méthode `split()` pour séparer la chaîne en un tableau de caractères, 
 // la méthode `reverse()` pour inverser l'ordre des éléments du tableau, et la méthode `join()` pour reconstruire la chaîne de caractères à partir du tableau inversé
 
-function reverseString(string) {
-    return Array.from(string).reverse().join("");
-}
+function reverseString(string) {                    // declaration de la fonction avec string en argument
+    return Array.from(string).reverse().join("");   // on cree un tableau a partir de la chaine , on fait un reverse et on 
+}                                                   // retire les separateurs pour joindre les caracteres pour l'affichage
 
-console.log(reverseString("Bonjour"))
+console.log(reverseString("Bonjour"))               // appel de la fonction

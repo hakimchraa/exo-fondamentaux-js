@@ -45,5 +45,5 @@ while (number > 10)
 let result = 0;                     // creation variable resultat
 for (let i = 1; i <= 10; i++) {     // boucle de 1 a 10 
     result=number*i ;               // mutiplication a chaque iteration de number par l'indice qui est incrementé 
-    console.log(`${number} * ${i} = ${result}`); // affichage du resultation 
+    console.log(`${number} * ${i} = ${result}`); // affichage du resultat
 }
