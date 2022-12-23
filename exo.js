@@ -5,10 +5,10 @@
 // 3. Modifiez la valeur de la variable `nom` pour qu'elle soit "Jane" sans modifier le code précédent.
 // 4. Affichez à nouveau la valeur de la variable nom dans la console.
 
-let nom = "john" ; // creer une variable nom avec comme valeur john
-console.log(nom) ; // affiche le contenu de la variable nom 
-nom = "Jane" ;     // affectation de la valeur Jane à la variable nom
-console.log(nom) ; // affiche le contenu de la variable nom 
+let nom = "john"; // creer une variable nom avec comme valeur john
+console.log(nom); // affiche le contenu de la variable nom 
+nom = "Jane";     // affectation de la valeur Jane à la variable nom
+console.log(nom); // affiche le contenu de la variable nom 
 
 
 // # Boucles
@@ -18,7 +18,7 @@ console.log(nom) ; // affiche le contenu de la variable nom
 
 
 for (let i = 1; i <= 10; i++) {     // boucle qui répéte 10 fois les instructions entre accolade
-    console.log( i )  // affiche la valeur de i a chaque itération de boucle
+    console.log(i)  // affiche la valeur de i a chaque itération de boucle
 }
 
 // # console.log()
@@ -27,8 +27,8 @@ for (let i = 1; i <= 10; i++) {     // boucle qui répéte 10 fois les instructi
 // 2. Utilisez la fonction console.log() pour afficher le résultat de l'expression mathématique "3 + 4" dans la console.
 // 3. Utilisez la fonction console.log() pour afficher la valeur de la variable `nom`, qui contient la chaîne de caractères du premier exercice.
 
-console.log("Bonjour tout le monde!") ; //affiche la chaine de caractére entrée en parametre
-console.log(3+4);                       //affiche le resultat de l'expression mathrmatique entrée en parametre
+console.log("Bonjour tout le monde!"); //affiche la chaine de caractére entrée en parametre
+console.log(3 + 4);                       //affiche le resultat de l'expression mathrmatique entrée en parametre
 console.log(nom);                       //affiche le contenu de la variable nom
 
 
@@ -42,18 +42,18 @@ console.log(nom);                       //affiche le contenu de la variable nom
 // Attention, veillez à bien utiliser les reverse quotes.
 
 let [firstName, lastName] = ["John", "Doe"];  // creation des variables
-console.log (`Bienvenue ${firstName} ${lastName} !`); // affiche le contenu des variables via la quote inverse
+console.log(`Bienvenue ${firstName} ${lastName} !`); // affiche le contenu des variables via la quote inverse
 
 // # Conditions
 
 // 1. Définissez une variable appelée `age` et affectez-lui la valeur de votre âge.
 // 2. Utilisez une conditionnelle if pour vérifier si l'âge est supérieur ou égal à 18. Si c'est le cas, utilisez la fonction console.log() pour afficher le message "Vous êtes majeur". Sinon, utilisez la fonction console.log() pour afficher le message "Vous êtes mineur".
 
-let age = 47 ;                          // declaration de la variable age
+let age = 47;                          // declaration de la variable age
 if (age >= 18) {                        // condition si age >= 18
-    console.log ("vous etes majeur")    // affiche message majeur
+    console.log("vous etes majeur")    // affiche message majeur
 } else {                                // sinon
-    console.log ("vous etes mineur")    // affiche message mineur
+    console.log("vous etes mineur")    // affiche message mineur
 
 }
 
@@ -64,7 +64,7 @@ if (age >= 18) {                        // condition si age >= 18
 // 1. Créez un tableau appelé `couleurs` qui contient les éléments suivants : "rouge", "vert", "bleu", "jaune", "orange".
 // 2. Utilisez une boucle for pour parcourir le tableau couleurs et afficher chaque élément dans la console en utilisant la fonction console.log().
 
-let couleurs = ["rouge", "vert", "bleu", "jaune", "orange"] ;   // declaration variable de type tableau 
+let couleurs = ["rouge", "vert", "bleu", "jaune", "orange"];   // declaration variable de type tableau 
 for (let i = 0; i < couleurs.length; i++) {                     // on repete les instructions entre accolades tant que i est < que le nbre d'element du tableau
     console.log(couleurs[i]);                                   // on affiche l'element du tableau couleur a chaque iteration
 }
@@ -82,3 +82,45 @@ numbers.push(6);                // on ajoute un element nombre a la fin du table
 console.log(numbers)            // on affiche le tableau
 numbers.pop();                  // on retire le dernier element du tableau via la methode pop
 console.log(numbers)            // on affiche le tableau
+
+
+
+// # Fonctions
+
+// 1. Écrivez une fonction qui prend en argument un entier et renvoie `true` si l'entier est pair, `false` sinon. 
+// Vous pouvez utiliser l'opérateur modulo `%` pour vérifier si un nombre est divisible par deux.
+
+function pair(entier) {
+    if { (entier % 2 == 0) 
+    return true;
+}
+return false;
+}
+
+// 2. Écrivez une fonction qui prend en argument un tableau d'entiers et renvoie la somme de tous les éléments du tableau. 
+// Vous pouvez utiliser une boucle `for` pour parcourir le tableau et ajouter chaque élément à une variable qui tiendra la somme.
+
+
+function sum(numbers) {
+    let result = 0;
+
+    for (let i = 0; i < numbers.length; i++) {
+        result+=numbers[i];    
+    }
+
+    return result;
+}
+
+console.log(sum([5, 6, 1, 2]))
+
+
+// 3. Écrivez une fonction qui prend en argument une chaîne de caractères et renvoie la chaîne de caractères inversée. 
+// Par exemple, si la chaîne passée en argument est "bonjour", la fonction doit renvoyer "ruojnob". 
+// Vous pouvez utiliser la méthode `split()` pour séparer la chaîne en un tableau de caractères, 
+// la méthode `reverse()` pour inverser l'ordre des éléments du tableau, et la méthode `join()` pour reconstruire la chaîne de caractères à partir du tableau inversé
+
+function reverseString(string) {
+    return Array.from(string).reverse().join("");
+}
+
+console.log(reverseString("Bonjour"))

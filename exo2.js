@@ -23,8 +23,8 @@
 // "Vous avez saisi 4 noms : Marie, Pierre, Paul, Jacques. C'est beaucoup de noms !"
 
 
-let number = prompt("Veuillez saisir le nombre de noms souhaités"); // je declare la variable number qui stockera la valeur saisi par le user
-let noms = []   // je declaration une variable noms de type tableau qui stockera les nom saisis par le user
+const number = prompt("Veuillez saisir le nombre de noms souhaités"); // je declare la variable number qui stockera la valeur saisi par le user
+const noms = []   // je declaration une variable noms de type tableau qui stockera les nom saisis par le user
 
 for (let i = 0; i < number; i++) {      // je crée une boucle avec le nbre saisi dans number en nbre d'itération
     nom = prompt("entrer les noms");    // a chaque iteration je demande a saisir un nom 
@@ -36,14 +36,14 @@ if (number > 3) {           // si le nombre de noms demandés est superieur a 3
 } else {confirm("Vous avez saisi " + number + " noms : " + noms ); } // sinon on affiche celui ci
 
 
-function afficheNom(array) {
-    for (let i = 0; i < array.length; i++) {
-       console.log (array[i]);
+function afficheNom(array) {                    // declaration de la fonction afficheNom avec en argument un tableau
+    for (let i = 0; i < array.length; i++) {    // boucle de 0 jusqu'a la longeur du tableau
+       console.log (array[i]);                  // affichage a chaque iteration de l'element du tableau
 
     }
 }
 
-afficheNom(noms); // appel de la fonction avec en parametre le tableau noms 
+afficheNom(noms); // appel de la fonction avec en argument le tableau noms 
 
 
 

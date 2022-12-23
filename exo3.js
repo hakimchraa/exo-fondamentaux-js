@@ -32,18 +32,18 @@
 //     Commentez votre code pour expliquer ce qu'il fait, ce qu'il produit et à quoi il sert.
 
 
-let number = 0;
+let number = 0;     // creation de la variable number
 do {
-    number = prompt("saisissez un chiffre entre 0 et 10");
-    if (number < 1 || number > 10) {
-        alert("le nombre doit etre compris entre 1 et 10");
+    number = prompt("saisissez un chiffre entre 0 et 10"); // boucle tant que avec une premier execution du prompt et une condition 
+    if (number < 1 || number > 10) {                        // a remplir pour sortir de la boucle qui est nombre compris entre
+        alert("le nombre doit etre compris entre 1 et 10"); // 1 et 10 
     }
 }
 while (number > 10)
 
 
-let result = 0;
-for (let i = 1; i <= 10; i++) {
-    result=number*i ;
-    console.log(`${number} * ${i} = ${result}`);
+let result = 0;                     // creation variable resultat
+for (let i = 1; i <= 10; i++) {     // boucle de 1 a 10 
+    result=number*i ;               // mutiplication a chaque iteration de number par l'indice qui est incrementé 
+    console.log(`${number} * ${i} = ${result}`); // affichage du resultation 
 }
